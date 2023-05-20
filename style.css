@@ -28,7 +28,7 @@ body{
     border: 2px solid #FFFAFA;
     background-size: cover;
     border-radius: 50%;
-    background-image: url('/Assets/favicon.jpg');
+    background-image: url('Assets/favicon.png');
     box-shadow: 0px 6px 5px grey;
 }
 .track-name{

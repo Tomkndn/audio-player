@@ -1,20 +1,17 @@
-function random_bg_color(){
-    let hex = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e'];
-    let a;
+let audio = document.getElementById('audio');
+let input = document.getElementById('input');
 
-    function populate(a){
-        for(let i=0; i<6; i++){
-            let x = Math.round(Math.random() * 14);
-            let y = hex[x];
-            a += y;
-        }
-        return a;
-    }
-    let Color1 = populate('#');
-    let Color2 = populate('#');
-    var angle = 'to left top';
+audio.addEventListener('click',()=>{
+    input.click();
+})
+// input.addEventListener('select',()=>{
+    // let playSong = input.value
+    // playSong.play()
+    // console.log(playSong)
 
-    let gradient = 'linear-gradient(' + angle + ',' + Color1 + ', ' + Color2 + ")fixed";
-    document.body.style.background = gradient;
+// })
+input.onchange = () => {
+  const selectedFile = input.files[0];
+  console.log(selectedFile);
+  console.log(selectedFile.name);
 }
-random_bg_color();
