@@ -1,0 +1,26 @@
+.wrapper{
+    width: 30vw;
+    height: 65vh;
+    background: #ede9e9;
+}
+header{
+    font-size: 1.8rem;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+li{
+    padding: 10px;
+    font-size: 1.2rem;
+}
+li:hover{
+    cursor: pointer;
+    background: #c1c0c0;
+}
+img{
+    rotate: 180deg;
+    position: relative;
+    left: 0;
+}
+#file{
+    margin-top: 5px;
+}
