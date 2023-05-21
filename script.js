@@ -38,8 +38,8 @@ let music_list = [
     },
     {
         name : 'Zeda Nasha',
-        music : 'Music/Zeda Nasha.mp3'
-    }
+        musisc : 'Music/Zeda Nasha.mp3'
+    },
 ];
 
 
