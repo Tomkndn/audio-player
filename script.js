@@ -67,12 +67,12 @@ let music_list = [
 
 let audio = document.getElementById('audio');
 
+let audioUpload = document.getElementById("file");
 audio.addEventListener('click',()=>{
     audioUpload.click()
     // audio.innerHTML = '<a id="audioLink" href="#" onclick="play(this)" data-value="">Upload</a>'
 })
 
-let audioUpload = document.getElementById("file");
 
 audioUpload.addEventListener("change", function() {
     uploadAudio(this);
@@ -155,11 +155,12 @@ function pauseTrack() {
     track_art.classList.remove('rotate');
     playpause_btn.innerHTML = '<i class = "fa fa-play-circle fa-5x"></i>';
 }
+
 function nextTrack() {
     if(track_index < music_list.length - 1 && isRandom === false){
         track_index+=1;
     }else if(track_index < music_list.length - 1 && isRandom === true){
-        let random_index = Number.parseInt(math.random() * music_list.length);
+        let random_index = Number.parseInt(Math.random() * music_list.length);
         track_index = random_index;
     }
     else{
@@ -210,7 +211,7 @@ function random_bg_color(){
 
     function populate(a){
         for(let i=0; i<6; i++){
-            let x = Math.round(Math.random() * 15);
+            let x = Math.round(Math.random() * 14);
             let y = hex[x];
             a += y;
         }
@@ -218,7 +219,7 @@ function random_bg_color(){
     }
     let Color1 = populate('#');
     let Color2 = populate('#');
-    var angle = 'to bottom right';
+    var angle = 'to left top';
 
     let gradient = 'linear-gradient(' + angle + ',' + Color1 + ', ' + Color2 + ")fixed";
     document.body.style.background = gradient;
