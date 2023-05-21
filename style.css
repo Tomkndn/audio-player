@@ -10,8 +10,8 @@ body{
     justify-content: center;
 }
 .wrapper{
-    padding: 30px;
     background-color: white;
+    padding: 30px;
     border-radius: 20px;
     box-shadow: rgba(0,0,0,0.3) 0px 19px 38px;
 }
@@ -49,7 +49,12 @@ body{
     font-size: 2.1rem;
 }
 .now-playing{
-    font-size: 1rem;
+    font-size: 1.4rem;
+}
+.playing{
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 .current-time,
 .total-duration{
@@ -112,6 +117,13 @@ i:hover{
 .randomActive{
     opacity: 1;
     color: #2da3db;
+}
+img{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    left: 35px;
 }
 /* .rotate{
     animation: rotation 8s infinte .8s linear;
