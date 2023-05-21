@@ -25,7 +25,7 @@ let music_list = [
         music : 'Music/Le_Le_Ram_Ram.mp3'
     },
     {
-        name : 'Safar - Juss',
+        name : 'Safar',
         music : 'Music/Safar - Juss.mp3'
     },
     {
@@ -33,7 +33,7 @@ let music_list = [
         music : 'Music/Tu Maan Meri Jaan.mp3'
     },
     {
-        name : 'Tujh Pe Pyaar - Yo Yo Honey Singh',
+        name : 'Tujh Pe Pyaar',
         music : 'Music/Tujh Pe Pyaar - Yo Yo Honey Singh.mp3'
     },
     {
@@ -58,7 +58,6 @@ let music_list = [
     }
 
 ];
-
 
 let audio = document.getElementById('audio');
 
@@ -201,12 +200,12 @@ function setUpdate(){
     }
 }
 function random_bg_color(){
-    let hex = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'];
+    let hex = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e'];
     let a;
 
     function populate(a){
         for(let i=0; i<6; i++){
-            let x = Math.round(Math.random() * 14);
+            let x = Math.round(Math.random() * 15);
             let y = hex[x];
             a += y;
         }
