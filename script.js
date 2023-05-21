@@ -42,18 +42,42 @@ let music_list = [
     }
 ];
 
-// let audio_file = document.querySelector('#input');
-// let audio = document.querySelector('#audio');
-// audio.addEventListener('click', ()=>{
-//     audio_file.click()
-//     console.log(audio_file.value)
-//     let loc = audio_file.value;
-//     music_list = [
-//         {
-//             music : loc
-//         }
-//     ]
-// })
+
+let audio = document.getElementById('audio');
+
+audio.addEventListener('click',()=>{
+    audioUpload.click()
+    // audio.innerHTML = '<a id="audioLink" href="#" onclick="play(this)" data-value="">Upload</a>'
+})
+
+let audioUpload = document.getElementById("file");
+
+audioUpload.addEventListener("change", function() {
+    uploadAudio(this);
+});
+
+let audioLink = document.getElementById('audioLink');
+let audioSource = document.getElementById("audioSource");
+// let audioControl = document.getElementById('audioControl');
+let audioName;
+function uploadAudio(input) {
+    let reader;
+    if (input.files && input.files[0]) {
+        reader = new FileReader();
+        reader.onload = function(e) {
+            audioLink.setAttribute('data-value', e.target.result);
+        }
+        reader.readAsDataURL(input.files[0]);
+        audioName = input.files[0].name
+}
+}
+
+function play(element) {
+    let musicSrc = element.getAttribute('data-value');
+    music_list.unshift({name: `${audioName}`, music: `${musicSrc}`});
+    track_index = 0
+    loadTrack(track_index)
+};
 
 loadTrack(track_index);
 
