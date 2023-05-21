@@ -15,6 +15,20 @@ body{
     border-radius: 20px;
     box-shadow: rgba(0,0,0,0.3) 0px 19px 38px;
 }
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.volume{
+    width: 25px;
+    rotate: -90deg;
+}
+.fa-volume-down,
+.fa-volume-up{
+    rotate: 90deg;
+}
 .details{
     display: flex;
     align-items: center;
@@ -58,16 +72,13 @@ body{
 .seek-slider{
     width: 60%;
 }
-.volume-slider{
-    width: 30%;
-}
 .buttons{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 50px;
 }
-.file{
+/* .file{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,11 +95,22 @@ body{
     background: #2da3db;
     color: white;
     transition: ease-in-out .3s;
-}
+} */
 i{
     cursor: pointer;
     opacity: .8;
 }
 i:hover{
     opacity: 1;
+}
+.rotate{
+    animation: rotation 8s infinte linear;
+}
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
 }
