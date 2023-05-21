@@ -111,4 +111,16 @@ i:hover{
 }
 .randomActive{
     opacity: 1;
+    color: #2da3db;
 }
+/* .rotate{
+    animation: rotation 8s infinte .8s linear;
+}
+@keyframes rotation{
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(359deg)
+    }
+} */
