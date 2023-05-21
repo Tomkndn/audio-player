@@ -78,7 +78,7 @@ body{
     justify-content: center;
     gap: 50px;
 }
-/* .file{
+.file{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,6 +88,7 @@ body{
     font-size: 1.1rem;
     padding: 10px;
     border-radius: 20px;
+    background: white;
 }
 .audio:hover{
     opacity: 1.0;
@@ -95,7 +96,12 @@ body{
     background: #2da3db;
     color: white;
     transition: ease-in-out .3s;
-} */
+}
+#audioLink{
+    text-decoration: none;
+    color: rgb(17, 16, 16);
+    padding: 10px;
+}
 i{
     cursor: pointer;
     opacity: .8;
@@ -103,14 +109,6 @@ i{
 i:hover{
     opacity: 1;
 }
-.rotate{
-    animation: rotation 8s infinte linear;
-}
-@keyframes rotation{
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(359deg);
-    }
+.randomActive{
+    opacity: 1;
 }
