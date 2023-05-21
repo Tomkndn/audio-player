@@ -14,15 +14,15 @@
     <div class="player">
         <div class="wrapper">
             <div class="slider">
-                <div class="details">
-                    <div class="now-playing">Playing x of y</div>
-                    <div class="track-art"></div>
-                    <div class="track-name">Track Name</div>
-                </div>
                 <div class="slider-container volume">
                     <i class="fa fa-volume-down"></i>
                     <input type="range" min="1" max="100" value="99" class="volume-slider" onchange="setVolume()">
                     <i class="fa fa-volume-up"></i>
+                </div>
+                <div class="details">
+                    <div class="now-playing">Playing x of y</div>
+                    <div class="track-art"></div>
+                    <div class="track-name">Track Name</div>
                 </div>
             </div>
 
@@ -51,10 +51,17 @@
                 </div>
             </div>
 
-            <!-- <div class="file">
-                <input type="file" id="input" accept=".mp3,audio/*" hidden>
+            <div class="file">
+                <input type="file" id="file" accept=".mp3,audio/*" hidden>
+                <button type="button" class="audio">
+                    <a id="audioLink" href="#" onclick="play(this)" data-value="">Upload
+                    </a>
+                </button>
                 <button type="button" class="audio" id="audio">Add Music</button>
-            </div> -->
+            </div>
+            <audio controls="controls" id="audioControl" hidden>
+            <source id="audioSource" src=""></source>
+            </audio>
         </div>
     </div>
     <script src="script.js"></script>
