@@ -39,7 +39,24 @@ let music_list = [
     {
         name : 'Zeda Nasha',
         music : 'Music/Zeda Nasha.mp3'
+    },
+    {
+        name : 'Still Rollin',
+        music : 'Music/Still Rollin.mp3'
+    },
+    {
+        name : 'On Top',
+        music : 'Music/On Top.mp3'
+    },
+    {
+        name : '295',
+        music : 'Music/295.mp3'
+    },
+    {
+        name : 'Moon Rise',
+        music : 'Music/Moon Rise.mp3'
     }
+
 ];
 
 
