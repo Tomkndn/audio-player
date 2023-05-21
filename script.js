@@ -38,6 +38,7 @@ let music_list = [
     },
     {
         name : 'Zeda Nasha',
+<<<<<<< HEAD
         music : 'Music/Zeda Nasha.mp3'
     },
     {
@@ -57,6 +58,10 @@ let music_list = [
         music : 'Music/Moon Rise.mp3'
     }
 
+=======
+        musisc : 'Music/Zeda Nasha.mp3'
+    },
+>>>>>>> aaa71cb53699ab445b41af8f9863c5724f73af33
 ];
 
 
