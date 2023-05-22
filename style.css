@@ -25,8 +25,7 @@ body{
     width: 25px;
     rotate: -90deg;
 }
-.fa-volume-down,
-.fa-volume-up{
+.fa-lg{
     rotate: 90deg;
 }
 .details{
@@ -116,7 +115,7 @@ i:hover{
 }
 .randomActive{
     opacity: 1;
-    color: #2da3db;
+    color: #0075ff;
 }
 img{
     cursor: pointer;
@@ -125,8 +124,12 @@ img{
     position: relative;
     left: 35px;
 }
-/* .rotate{
-    animation: rotation 8s infinte .8s linear;
+.rotate{
+    /* animation: rotation 8s infinite; */
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 @keyframes rotation{
     from{
@@ -135,4 +138,4 @@ img{
     to{
         transform: rotate(359deg)
     }
-} */
+}

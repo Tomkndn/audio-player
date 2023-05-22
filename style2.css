@@ -1,6 +1,5 @@
 .wrapper{
     width: 30vw;
-    height: 65vh;
     background: #ede9e9;
 }
 header{
@@ -8,8 +7,15 @@ header{
     text-align: center;
     border-bottom: 2px solid black;
 }
+.playlist{
+    height: 50vh;
+    width: 27vw;
+    overflow-y: auto;
+}
 li{
+    width: 90%;
     padding: 10px;
+    text-align: left;
     font-size: 1.2rem;
 }
 li:hover{
@@ -21,6 +27,11 @@ img{
     position: relative;
     left: 0;
 }
-#file{
-    margin-top: 5px;
+.fa-trash{
+    color: #dd4646;
+    position: relative;
+    left: 0;
 }
+/* #file{
+    margin-top: 5px;
+} */

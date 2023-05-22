@@ -7,6 +7,7 @@
     <title>Audio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="Assets/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -15,14 +16,14 @@
         <div class="wrapper">
             <div class="slider">
                 <div class="slider-container volume">
-                    <i class="fa fa-volume-down"></i>
+                    <i class="fa-solid fa-volume-down fa-lg" id="downVolume" onclick="upDownVolume()"></i>
                     <input type="range" min="1" max="100" value="99" class="volume-slider" onchange="setVolume()">
-                    <i class="fa fa-volume-up"></i>
+                    <i class="fa-solid fa-volume-up fa-lg" id="upVolume" onclick="upDownVolume()"></i>
                 </div>
                 <div class="details">
                     <div class="playing">
                         <div class="now-playing">Playing x of y</div>
-                        <a href="playlist.html">
+                        <a href="playlist.html" target="_blank">
                             <img src="Assets/arrow.svg" align="right" alt="arrow">
                         </a>
                     </div>
