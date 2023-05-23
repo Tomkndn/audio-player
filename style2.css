@@ -1,4 +1,4 @@
-.wrapper{
+.wrapper2{
     width: 30vw;
     background: #ede9e9;
 }
@@ -22,7 +22,7 @@ li:hover{
     cursor: pointer;
     background: #c1c0c0;
 }
-img{
+.wrapper2>img{
     rotate: 180deg;
     position: relative;
     left: 0;
