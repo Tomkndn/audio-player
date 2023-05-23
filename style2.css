@@ -7,7 +7,7 @@ header{
     text-align: center;
     border-bottom: 2px solid black;
 }
-.playlist{
+#playlist{
     height: 50vh;
     width: 27vw;
     overflow-y: auto;
